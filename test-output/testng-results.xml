@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2019-11-24T17:59:24 GMT" name="Default suite" finished-at="2019-11-24T18:00:50 GMT" duration-ms="85798">
+    <groups>
+    </groups>
+    <test started-at="2019-11-24T17:59:24 GMT" name="Default test" finished-at="2019-11-24T18:00:50 GMT" duration-ms="85798">
+      <class name="com.applitools.tests.VisualAITests">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.applitools.tests.VisualAITests@76adb233]" started-at="2019-11-24T17:59:24 GMT" name="setUp" finished-at="2019-11-24T17:59:27 GMT" duration-ms="3192" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.applitools.tests.VisualAITests@76adb233]" started-at="2019-11-24T17:59:27 GMT" name="setup" finished-at="2019-11-24T17:59:28 GMT" duration-ms="333" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="loginPageUITest()[pri:1, instance:com.applitools.tests.VisualAITests@76adb233]" started-at="2019-11-24T17:59:28 GMT" name="loginPageUITest" finished-at="2019-11-24T17:59:49 GMT" duration-ms="20975" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginPageUITest -->
+        <test-method signature="loginAndSortTableByAmount()[pri:2, instance:com.applitools.tests.VisualAITests@76adb233]" started-at="2019-11-24T17:59:49 GMT" name="loginAndSortTableByAmount" finished-at="2019-11-24T18:00:11 GMT" duration-ms="22204" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginAndSortTableByAmount -->
+        <test-method signature="testExpenseChart()[pri:3, instance:com.applitools.tests.VisualAITests@76adb233]" started-at="2019-11-24T18:00:11 GMT" name="testExpenseChart" finished-at="2019-11-24T18:00:31 GMT" duration-ms="19579" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testExpenseChart -->
+        <test-method signature="testDynamicContent()[pri:4, instance:com.applitools.tests.VisualAITests@76adb233]" started-at="2019-11-24T18:00:31 GMT" name="testDynamicContent" finished-at="2019-11-24T18:00:50 GMT" duration-ms="19220" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDynamicContent -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.applitools.tests.VisualAITests@76adb233]" started-at="2019-11-24T18:00:50 GMT" name="tearDown" finished-at="2019-11-24T18:00:50 GMT" duration-ms="93" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="afterEach()[pri:0, instance:com.applitools.tests.VisualAITests@76adb233]" started-at="2019-11-24T18:00:50 GMT" name="afterEach" finished-at="2019-11-24T18:00:50 GMT" duration-ms="2" status="FAIL">
+          <exception class="java.lang.IllegalStateException">
+            <message>
+              <![CDATA[Client instance has been closed.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalStateException: Client instance has been closed.
+at org.glassfish.jersey.internal.guava.Preconditions.checkState(Preconditions.java:169)
+at org.glassfish.jersey.client.JerseyClient.checkNotClosed(JerseyClient.java:257)
+at org.glassfish.jersey.client.JerseyClient.target(JerseyClient.java:279)
+at org.glassfish.jersey.client.JerseyClient.target(JerseyClient.java:56)
+at com.applitools.eyes.ServerConnector.closeBatch(ServerConnector.java:722)
+at com.applitools.eyes.selenium.SeleniumEyes.closeBatch(SeleniumEyes.java:758)
+at com.applitools.eyes.EyesRunner.deleteAllBatches(EyesRunner.java:33)
+at com.applitools.eyes.EyesRunner.getAllTestResults(EyesRunner.java:25)
+at com.applitools.eyes.EyesRunner.getAllTestResults(EyesRunner.java:17)
+at com.applitools.tests.VisualAITests.afterEach(VisualAITests.java:89)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:340)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:294)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:623)
+at org.testng.TestRunner.afterRun(TestRunner.java:853)
+at org.testng.TestRunner.run(TestRunner.java:594)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:402)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:396)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:355)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalStateException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterEach -->
+      </class> <!-- com.applitools.tests.VisualAITests -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

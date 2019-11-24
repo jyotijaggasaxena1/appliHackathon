@@ -1,0 +1,14 @@
+com/applitools/driver/DriverManager.class
+com/applitools/tests/TraditionalTests.class
+com/applitools/utils/Transactions$1.class
+com/applitools/utils/PropUtil.class
+com/applitools/pages/LoginPage.class
+com/applitools/utils/Transactions.class
+com/applitools/utils/Transactions$Builder.class
+com/applitools/driver/DriverClass.class
+com/applitools/pages/Page.class
+com/applitools/pages/DemoApp.class
+com/applitools/utils/ImageUtil.class
+com/applitools/tests/VisualAITests.class
+com/applitools/BaseTest.class
+com/applitools/driver/DriverFactory.class

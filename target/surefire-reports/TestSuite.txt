@@ -1,0 +1,33 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 9, Failures: 5, Errors: 0, Skipped: 0, Time elapsed: 220.609 s <<< FAILURE! - in TestSuite
+testEmptyPassword(com.applitools.tests.VisualAITests)  Time elapsed: 16.587 s  <<< FAILURE!
+com.applitools.eyes.exceptions.DiffsFoundException: Test 'Hackathon - Test invalid data-empty password' of 'Demo App' detected differences! See details at: https://eyes.applitools.com/app/batches/00000251827672211094/00000251827672190591?accountId=NFH5dQJut06Ao5rZIFCmsQ~~
+	at com.applitools.tests.VisualAITests.testEmptyPassword(VisualAITests.java:129)
+
+testEmptyUsername(com.applitools.tests.VisualAITests)  Time elapsed: 20.845 s  <<< FAILURE!
+com.applitools.eyes.exceptions.DiffsFoundException: Test 'Hackathon - Test invalid data - blank username' of 'Demo App' detected differences! See details at: https://eyes.applitools.com/app/batches/00000251827672211094/00000251827672172755?accountId=NFH5dQJut06Ao5rZIFCmsQ~~
+	at com.applitools.tests.VisualAITests.testEmptyUsername(VisualAITests.java:116)
+
+testInvalidPassword(com.applitools.tests.VisualAITests)  Time elapsed: 51.97 s  <<< FAILURE!
+com.applitools.eyes.exceptions.DiffsFoundException: Test 'Hackathon - Test invalid data - password' of 'Demo App' detected differences! See details at: https://eyes.applitools.com/app/batches/00000251827672211094/00000251827672152624?accountId=NFH5dQJut06Ao5rZIFCmsQ~~
+	at com.applitools.tests.VisualAITests.testInvalidPassword(VisualAITests.java:102)
+
+testInvalidUserName(com.applitools.tests.VisualAITests)  Time elapsed: 1.76 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":"#username"}
+  (Session info: chrome=78.0.3904.108)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'jyotis-MBP', ip: '2a02:c7d:da53:7900:d9f9:add9:5e5d:df72%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.14.6', java.version: '12.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 78.0.3904.108, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: /var/folders/30/fc_n2ryn3dj...}, goog:chromeOptions: {debuggerAddress: localhost:61767}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: b086746c9b1293f068b3571205e7d948
+*** Element info: {Using=id, value=username}
+	at com.applitools.tests.VisualAITests.testInvalidUserName(VisualAITests.java:85)
+
+afterAllTests(com.applitools.tests.VisualAITests)  Time elapsed: 29.461 s  <<< FAILURE!
+java.lang.IllegalStateException: Client instance has been closed.
+	at com.applitools.tests.VisualAITests.afterAllTests(VisualAITests.java:178)
+

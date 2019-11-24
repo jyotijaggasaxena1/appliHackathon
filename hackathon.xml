@@ -1,0 +1,10 @@
+<suite name="Applietool hackthon">
+	<test name="Mobile portrait">
+		<parameter name="viewportHeight" value="600" />
+		<parameter name="viewportWidth" value="848" />
+		<classes>
+			<class name="com.applitools.tests.VisualAITests">
+			</class>
+		</classes>
+	</test>
+</suite>
